@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tera's Marketing Portfolio</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #d6f0ff;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #3d6880;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .headshot {
+      width: 400px;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 1rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+    }
+
+    .btn:focus,
+    a:focus,
+    button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-image {
+      width: 50%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Slideshow */
+    #slideshow {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 500px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 16px;
+      background-color: #000;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+    .quote-bubble {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  max-width: 280px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: fadeInBubble 1.2s ease-out;
+}
+
+.quote-bubble span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+}
+
+@keyframes fadeInBubble {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tera Wittig's Marketing Portfolio</h1>
+    <p>Impactful. Strategic. Creative.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! Welcome to my self-coded marketing portfolio. My name is Tera Wittig, and I'm an aspiring marketing strategist passionate about building brands and creating meaningful customer experiences. I specialize in campaign designs, growth strategy, and social media marketing.</p>
+      <img src="headshot.jpg" alt="Tera Wittig Headshot" class="headshot" />
+      <a href="TeraWittig_CV.pdf" class="btn" target="_blank">View My CV</a>
+    </section>
+
+    <section id="work">
+      <h2>My Work</h2>
+
+      <div class="project">
+        <h3>GWL Corporate Yoga Campaign</h3>
+        <p>Spearheaded the implementation of weekly Corporate Yoga sessions for office tenants by coordinating with external and internal parties, which resulted in a program with 45+ participants</p>
+        <img src="yoga.jpg" class="project-image" alt="Corporate Yoga Campaign Image" />
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <div class="project">
+        <h3>Product Launch Project</h3>
+        <p>In a hypothetical strategic collaboration with NHL star Quinn Hughes, I developed a full-scale marketing plan for the launch of the limited-edition "Hughes #43" shoe, a reimagined version of Vans' Knu Skool line. The campaign aimed to boost Vans’ North American market share, especially among Gen Z and millennial hockey fans.</p>
+        <ul>
+          <li><strong>Strategy:</strong> Athlete endorsement, brand alignment, and limited edition scarcity</li>
+          <li><strong>Promotion:</strong> Social media (Instagram, TikTok, YouTube), “Go Skateboarding Day” activation in Vancouver</li>
+          <li><strong>Budget:</strong> $750K ambassador deal + under $1M Year 1 marketing cost</li>
+          <li><strong>Projected Revenue:</strong> $1.2M+ in Year 1</li>
+          <li><strong>Creative Assets:</strong> Video content, fan contests, event coverage</li>
+        </ul>
+        <img src="vans.jpg" class="project-image" alt="Vans shoe design Image" />
+        <p>Mockup of shoe designed with Affinity Photo</p>
+        <a href="HughesxVans_MarketingCampaign.pdf" target="_blank" class="btn">View Full Report</a>
+      </div>
+
+      <div class="project">
+        <h3>Social Media Content Creation</h3>
+        <p>I create unique and captivating content on my personal TikTok account which has grown significantly in the past year. I specialize in travel conntent with food and activity reccomendations.   </p>
+      <div style="display: flex; gap: 5px;">
+  <div class="image-row">
+ <div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="page.jpg" class="project-image" alt="TikTok page screenshot" />
+  <img src="video.jpg" class="project-image" alt="Analytics screenshot" />
+</div>
+
+</div>
+
+        
+</div>
+
+        <a href="https://www.tiktok.com/@terastravels?_t=ZS-8ylrM4Aj4on&_r=1" target="_blank" rel="noopener noreferrer">Visit my page</a>
+    
+      </div>
+    </section>
+
+    <section id="slideshow">
+      <h2 style="color:black;">Photography</h2>
+      <div class="slideshow-container">
+        <img class="slide" src="background.JPG" alt="Background" />
+        <img class="slide" src="ocean.JPG" alt="Ocean" />
+        <img class="slide" src="seal.JPG" alt="Seal" />
+        <img class="slide" src="koala1.jpg" alt="Koala" />
+        <img class="slide" src="franz.JPG" alt="Franz Josef Glacier" />
+        <img class="slide" src="lights.JPG" alt="Lights" />
+        <img class="slide" src="royspeak.JPG" alt="Roy's Peak" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Want to work together or learn more?</p>
+      <p>Email: <a href="mailto:terawittig03@gmail.com">terawittig03@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/TeraWittig/" target="_blank">www.linkedin.com/in/TeraWittig/</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tera Wittig. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides() {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add('active');
+    }
+
+    slides[0].classList.add('active');
+    setInterval(showSlides, 4000);
+  </script>
+  <div class="quote-bubble">
+  <p>“Creativity is intelligence having fun”<br><span>- Albert Einstein</span></p>
+</div>
+
+
+</body>
+</html>
